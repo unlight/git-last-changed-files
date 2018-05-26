@@ -6,7 +6,7 @@ it('smoke', () => {
 });
 
 it('without options first matching file', () => {
-    const result = lib.lastChangesFilesSync();
+    const result = lib.lastChangesFilesSync({ size: 1 });
     assert(result.length > 0);
 });
 
@@ -16,8 +16,8 @@ it('return readme', () => {
     assert.equal(result[0], 'README.md');
 });
 
-it('test editorconfig file', () => {
+it('find file in deep of commits', () => {
     const result = lib.lastChangesFilesSync({ test: '.editorconfig' });
     assert.equal(result.length, 1);
-    assert.equal(result[0], 'README.md');
+    assert.equal(result[0], '.editorconfig');
 });
