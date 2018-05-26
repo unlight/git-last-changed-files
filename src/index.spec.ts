@@ -15,3 +15,9 @@ it('return readme', () => {
     assert.equal(result.length, 1);
     assert.equal(result[0], 'README.md');
 });
+
+it('test editorconfig file', () => {
+    const result = lib.lastChangesFilesSync({ test: '.editorconfig' });
+    assert.equal(result.length, 1);
+    assert.equal(result[0], 'README.md');
+});
