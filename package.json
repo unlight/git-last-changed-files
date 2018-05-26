@@ -1,8 +1,8 @@
 {
-  "name": "node-package-starter",
+  "name": "git-last-changed-files",
   "version": "0.2.3",
   "license": "MIT",
-  "description": "node-package-starter",
+  "description": "Get last changed files from git history commits",
   "main": "dist/index.js",
   "typings": "src/index.ts",
   "scripts": {
@@ -64,7 +64,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unlight/node-package-starter.git"
+    "url": "https://github.com/unlight/git-last-changed-files.git"
   },
   "keywords": [],
   "release": {
