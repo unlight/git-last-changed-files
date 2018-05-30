@@ -9,12 +9,32 @@ function countCommits() {
 }
 
 type Options = {
+    /**
+     * Filter files by this anymatch.Matcher.
+     * If not set match to any file.
+     * https://github.com/micromatch/anymatch#anymatch-matchers-teststring-returnindex-startindex-endindex
+     * Default: null
+     */
     test?: anymatch.Matcher;
+    /**
+     * Page size for checking git history.
+     * Default: 10
+     */
     size?: number;
+    /**
+     * Begin from commit.
+     */
     from?: number;
+    /**
+     * End to commit.
+     */
     to?: number;
-    count?: number;
+    /**
+     * See changes recursively (flag `-r`)
+     */
     recursive?: boolean;
+    /** @internal */
+    count?: number;
 };
 
 export function lastChangesSync({ test, size = 10, from = size, to = 0, count = countCommits(), recursive = true }: Options = {}): string[] {
