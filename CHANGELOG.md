@@ -1,3 +1,14 @@
+# [2.1.0](https://github.com/unlight/git-last-changed-files/compare/v2.0.0...v2.1.0) (2018-05-31)
+
+
+### Update
+
+* Changed transpile target to ES5 ([f3a0b1090e9d25ead862ee7350a83e44d6968ae8](https://github.com/unlight/git-last-changed-files/commit/f3a0b1090e9d25ead862ee7350a83e44d6968ae8))
+
+### Upgrade
+
+* Dependencies updated ([59b53d3634a27728a5b865a176b17134ad25c6c0](https://github.com/unlight/git-last-changed-files/commit/59b53d3634a27728a5b865a176b17134ad25c6c0))
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/unlight/git-last-changed-files/compare/v1.0.0...v2.0.0) (2018-05-30)
 
