@@ -31,6 +31,7 @@ type Options = {
     to?: number;
     /**
      * See changes recursively (flag `-r`)
+     * Default: true
      */
     recursive?: boolean;
     /** @internal */
