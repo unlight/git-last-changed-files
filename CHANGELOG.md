@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/unlight/git-last-changed-files/compare/v2.1.0...v2.1.1) (2018-06-01)
+
+
+### Fix
+
+* Check for null range ([92d2e97ab078378b1eb84d7c479a735a6a281bda](https://github.com/unlight/git-last-changed-files/commit/92d2e97ab078378b1eb84d7c479a735a6a281bda))
+
 # [2.1.0](https://github.com/unlight/git-last-changed-files/compare/v2.0.0...v2.1.0) (2018-05-31)
 
 
