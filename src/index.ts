@@ -50,6 +50,9 @@ export function lastChangesSync({ test, size = 10, from = size, to = 0, count = 
     if (recursive) {
         args.unshift('-r');
     }
+    if (from === to) {
+        return result;
+    }
     const { stdout } = execa.sync('git', ['diff-tree'].concat(args).concat(`@~${from}..@~${to}`)) as SpawnSyncReturns<string>;
     stdout.split('\n').forEach(line => {
         const [, filepath] = line.split('\t');

@@ -10,7 +10,18 @@ it('without options first matching file', () => {
     assert(result.length > 0);
 });
 
+it('empty range', () => {
+    const result = lib.lastChangesSync({ from: 1, to: 1 });
+    assert.deepEqual(result, []);
+});
+
 if (!process.env.CI) {
+
+    it('negative matching', () => {
+        const result = lib.lastChangesSync({ test: /^((?!spec\.ts).)*\.ts$/g });
+        assert.equal(result.length, 1);
+        assert.equal(result[0], 'src/index.ts');
+    });
 
     it('return readme', () => {
         const result = lib.lastChangesSync({ test: 'README.md' });
